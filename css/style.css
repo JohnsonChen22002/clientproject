@@ -1,3 +1,29 @@
-h1 {
-  color: fuchsia;
+body {
+    background-color: skyblue;
+}
+
+#form {
+    margin: 100px;
+}
+
+#formButton {
+    margin-top: 10px;
+}
+
+#state {
+    font-size: 25px;
+}
+
+
+#logo {
+    margin-top: 125px;
+    text-align: center;
+    margin-left: 0.7%;
+    font-weight: bold;
+    font-family: "Coming Soon";
+}
+
+#border {
+    border: solid 2px double;
+    border-style: tras;
 }
