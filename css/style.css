@@ -1,29 +1,30 @@
 body {
-    background-color: skyblue;
 }
 
 #form {
     margin: 100px;
-}
-
-#formButton {
-    margin-top: 10px;
-}
-
-#state {
-    font-size: 25px;
+    display: inline-block;
 }
 
 
 #logo {
     margin-top: 125px;
-    text-align: center;
-    margin-left: 0.7%;
-    font-weight: bold;
-    font-family: "Coming Soon";
+    margin-left: 450px;
+    height: 200px;
+
 }
 
-#border {
-    border: solid 2px double;
-    border-style: tras;
+#input {
+    height: 100px;
+    width: 1000px;
+    font-size: 40px;
+}
+
+#formButton {
+    height: 100px;
+    width: 100px;
+}
+
+#searchGlyphicon {
+    font-size: 40px;
 }
