@@ -1,35 +1,35 @@
 /* global $ */
 $(document).ready(function() {
-    var weatherUrl = "";
-    var apiKey = "&api_key=";
-    
+    var weatherUrl = "http://api.openweathermap.org/data/2.5/forecast?zip=";
+    var apiKey = ",us&APPID=970dbba6cad5524316250d5b1d1e77cc";
+
     function weatherURLWithSearchTerm(searchTerm) {
-        // write a function that will return a url for the giphy API with
-        // the searchTerm provided in the parameters
         var newUrl = weatherUrl + searchTerm + apiKey;
         return newUrl;
     }
     
-   
     
     function callWeatherAPIWithSearchTerm(searchTerm) {
-        // write a function that uses the above two functions to create the url,
-        // uses ajax to send a request, and appends the result to the body
         $.ajax({
             url: weatherURLWithSearchTerm(searchTerm),
             method: "GET",
             success: function(result) {
-                
+                console.log(result);
+                var temperature =  result.list[0].main.temp;
+                console.log(temperature);
+
+
+
             },
         });
     }
-    
-     $("button").click(function() {
+
+    $("#formButton").click(function() {
         var input = $("#input").val();
-        console.log(input);
+        callWeatherAPIWithSearchTerm(input);
     });
-    
-    
-    
-    
+
+
+
+
 });
