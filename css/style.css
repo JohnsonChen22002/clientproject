@@ -60,3 +60,12 @@
 #searchGlyphicon {
     font-size: 40px;
 }
+
+#result {
+    font-size: 50px;
+    height: 65px;
+    width: 1000px;
+    border:2px double black;
+    text-align:center;
+    margin:40px;
+}
